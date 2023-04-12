@@ -114,7 +114,13 @@ class BinarySearchTree{
    with a smallest key
    */
    public int getMin(Node root){
-      //implement me
+
+      Node curr = root;
+
+      while (curr.left != null) {
+         curr = curr.left;
+      }
+      return curr.value;
    }
   
   
