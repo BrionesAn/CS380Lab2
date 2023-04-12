@@ -57,7 +57,7 @@ class BinarySearchTree{
    */
    public void inOrderTraversal(Node root){
 
-      if (root = null) {
+      if (root == null) {
          return;
       }
 
@@ -130,7 +130,13 @@ class BinarySearchTree{
    with a largest key
    */
    public int getMax(Node root){
-	  //implement me
+
+      Node curr = root;
+
+      while (curr.right != null) {
+         curr = curr.right;
+      }
+      return curr.value;
    }
    
    
